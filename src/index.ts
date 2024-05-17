@@ -32,7 +32,7 @@ age:21,
 
 // function
 // arguments must said that which data and also we have to write return type tooo
-// in below example we have string argument and return type with void   if we retun string then we have to write string there
+// in below example we have string argument and return type with void  if it returns nothing
 
 function fun(user:string):void{
     // return us
@@ -40,4 +40,10 @@ function fun(user:string):void{
 
 fun("kalyan")
 
+// this function returns string so i replaced void with string
+function funs(user:string):string{
+    return user
+}
+
+funs("kalyan")
 
