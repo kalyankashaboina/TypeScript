@@ -27,3 +27,38 @@ function funs(user, age) {
     return user + "age is " + age;
 }
 funs("kalyan", 23);
+let dd = [10, 20, 30];
+let cc = dd.map(num => num * 2);
+console.log(cc);
+
+
+//------------------------------------------------------ Tuples------------------------
+// to define the tuples ,specify the types of its elemnts in the correct order
+let tuple = ["kalyan", 20];
+// to acces tuples
+console.log(tuple[0]);
+console.log(tuple[1]);
+// you can modify the tiples
+tuple[0] = "world";
+tuple[1] = 30;
+// optional
+// both are correct
+let tuplet;
+tuplet = ["kalyan"];
+tuplet = ["hari", 20];
+let AliasTuple = ["aliasTuple", 200];
+// array or rest tuples
+let ArrTuples;
+ArrTuples = ["hello", 203, 204];
+// Tuple FUNCTIONS
+// return type
+function TupleFun() {
+    return ["kalyan", 30];
+}
+const [named, ages] = TupleFun();
+console.log(named, ages);
+// parametertype
+function paraTuple(person) {
+    console.log(`name is ${person[0]} and age is ${person[1]}`);
+}
+paraTuple(["king", 30]);
