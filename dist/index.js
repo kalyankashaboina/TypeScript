@@ -22,7 +22,8 @@ function fun(user) {
 }
 fun("kalyan");
 // this function returns string so i replaced void with string
-function funs(user) {
-    return user;
+// the main point here is the number of arguments always equal to number of parameters
+function funs(user, age) {
+    return user + "age is " + age;
 }
-funs("kalyan");
+funs("kalyan", 23);

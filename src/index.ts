@@ -41,9 +41,10 @@ function fun(user:string):void{
 fun("kalyan")
 
 // this function returns string so i replaced void with string
-function funs(user:string):string{
-    return user
+// the main point here is the number of arguments always equal to number of parameters
+function funs(user:string,age:number):string{
+    return user+"age is "+age
 }
 
-funs("kalyan")
+funs("kalyan",23)
 
